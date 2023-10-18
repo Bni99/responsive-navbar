@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="logo-nav-container">
+          <h2>snap</h2>
+          <div class="side-menu" id="side-menu">
+            <img
+              src="/images/icon-close-menu.svg"
+              alt="close-menu-icon"
+              id="close-menu"
+              onClick="closeMobileMenu()"
+            />
+            <ul>
+              <div style="position: relative" class="dropdown">
+                <li>
+                  <span
+                    onClick="toggle1()"
+                    style="display: flex; align-items: center; gap: 0rem"
+                    >Features<img
+                      src="/images/icon-arrow-down.svg"
+                      style="padding-left: 0.3rem"
+                      id="features-icon"
+                      class="features-icon"
+                  /></span>
+
+                  <div class="dropdown-menu dp1" id="dp1">
+                    <ul class="features-ul">
+                      <li><img src="/images/icon-todo.svg" />Todo List</li>
+                      <li><img src="/images/icon-calendar.svg" />Calendar</li>
+                      <li><img src="/images/icon-reminders.svg" />Reminders</li>
+                      <li><img src="/images/icon-planning.svg" />Planning</li>
+                    </ul>
+                  </div>
+                </li>
+              </div>
+              <div style="position: relative" class="dropdown">
+                <li>
+                  <span
+                    onclick="toggle2()"
+                    style="display: flex; align-items: center; gap: 0rem"
+                    >Company<img
+                      src="/images/icon-arrow-down.svg"
+                      style="padding-left: 0.3rem"
+                      id="company-icon"
+                      class="company-icon"
+                  /></span>
+                  <div class="dropdown-menu dp2" id="dp2">
+                    <ul class="company-ul">
+                      <li>History</li>
+                      <li>Our Team</li>
+                      <li>Blog</li>
+                    </ul>
+                  </div>
+                </li>
+              </div>
+              <li>Careers</li>
+              <li>About</li>
+            </ul>
+            <div class="buttons">
+              <button>Login</button>
+              <button>Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="icon-container">
+          <img
+            src="images/icon-menu.svg"
+            alt="icon-menu"
+            id="icon-menu"
+            onClick="showMobileMenu()"
+          />
+        </div>
+      </nav>
+      <section>
+        <div id="left">
+          <article class="left_1">
+            <h1 class="left-heading">Make remote work</h1>
+            <p class="left-paragraph">
+              Get your team in sync , no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <div class="button-container">
+              <button class="left-button">Learn more</button>
+            </div>
+          </article>
+          <article class="logos">
+            <img src="/images/client-databiz.svg" alt="databiz-logo" />
+            <img src="/images/client-audiophile.svg" alt="audiophile-logo" />
+            <img src="/images/client-meet.svg" alt="meet-logo" />
+            <img src="/images/client-maker.svg" alt="maker-logo" />
+          </article>
+        </div>
+        <div id="right">
+          <img
+            src="/images/image-hero-mobile.png"
+            alt="main-logo"
+            class="hero-image"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="/script.js" />
+  </body>
+</html>
